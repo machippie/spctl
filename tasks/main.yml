@@ -1,0 +1,26 @@
+---
+- name: Disable master system policy
+  when: spctl_disable_master | bool
+  command: spctl --master-disable
+  changed_when: False
+  tags:
+    - spctl
+
+- name: Enable master system policy
+  when: not spctl_disable_master | bool
+  command: spctl --master-enable
+  changed_when: False
+  tags:
+    - spctl
+
+- name: Update gatekeeper policy
+  osx_defaults:
+    domain: /var/db/SystemPolicy-prefs
+    key: enabled
+    type: string
+    value: '{% if spctl_gatekeeper_policy | default(False) %}yes{% else %}no{% endif %}'
+    state: present
+  tags:
+    - spctl
+
+...

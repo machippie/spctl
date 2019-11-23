@@ -1,0 +1,5 @@
+---
+spctl_disable_master: True
+spctl_gatekeeper_policy: False
+
+...
