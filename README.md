@@ -19,6 +19,8 @@ Ansible role to configure spctl
 
 ### spctl_disable_master
 
+Disable/Enable master system policy
+
 #### Default value
 
 ```YAML
@@ -26,6 +28,8 @@ spctl_disable_master: true
 ```
 
 ### spctl_gatekeeper_policy
+
+Update gatekeeper policy
 
 #### Default value
 
