@@ -5,7 +5,7 @@ def main(ctx):
     notify(ctx),
   ]
 
-def linting(config):
+def linting(ctx):
   return {
     'kind': 'pipeline',
     'type': 'docker',
@@ -34,7 +34,7 @@ def linting(config):
     },
   }
 
-def readme(config):
+def readme(ctx):
   return {
     'kind': 'pipeline',
     'type': 'docker',
@@ -95,7 +95,7 @@ def readme(config):
     },
   }
 
-def notify(config):
+def notify(ctx):
   return {
     'kind': 'pipeline',
     'type': 'docker',
