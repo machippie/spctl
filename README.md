@@ -2,26 +2,45 @@
 
 [![Build Status](https://cloud.drone.io/api/badges/machippie/spctl/status.svg)](https://cloud.drone.io/machippie/spctl)
 
-TBD
+Ansible role to configure spctl
 
-## Security
+## Table of content
 
-If you find a security issue please contact thomas@webhippie.de first.
+* [Default Variables](#default-variables)
+  * [spctl_disable_master](#spctl_disable_master)
+  * [spctl_gatekeeper_policy](#spctl_gatekeeper_policy)
+* [Dependencies](#dependencies)
+* [License](#license)
+* [Author](#author)
 
-## Contributing
+---
 
-Fork -> Patch -> Push -> Pull Request
+## Default Variables
 
-## Authors
+### spctl_disable_master
 
-* [Thomas Boerger](https://github.com/tboerger)
+#### Default value
+
+```YAML
+spctl_disable_master: true
+```
+
+### spctl_gatekeeper_policy
+
+#### Default value
+
+```YAML
+spctl_gatekeeper_policy: false
+```
+
+## Dependencies
+
+None.
 
 ## License
 
 Apache-2.0
 
-## Copyright
+## Author
 
-```console
-Copyright (c) 2019 Thomas Boerger <thomas@webhippie.de>
-```
+Thomas Boerger
