@@ -1,6 +1,9 @@
 # Standards: 0.1
 ---
+# @var spctl_disable_master:description: Disable/Enable master system policy
 spctl_disable_master: True
+
+# @var spctl_gatekeeper_policy:description: Update gatekeeper policy
 spctl_gatekeeper_policy: False
 
 ...
