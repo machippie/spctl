@@ -1,14 +1,14 @@
 # Standards: 0.1
 ---
 - name: Disable master system policy
-  when: spctl_disable_master | bool
+  when: spctl_disable_master
   command: spctl --master-disable
   changed_when: False
   tags:
     - spctl
 
 - name: Enable master system policy
-  when: not spctl_disable_master | bool
+  when: not spctl_disable_master
   command: spctl --master-enable
   changed_when: False
   tags:
