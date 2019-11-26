@@ -58,7 +58,7 @@ def readme(ctx):
         },
       },
       {
-        'name': 'commit',
+        'name': 'publish',
         'image': 'plugins/gh-pages:latest',
         'pull': 'always',
         'settings': {
