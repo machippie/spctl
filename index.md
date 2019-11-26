@@ -1,23 +1,13 @@
 
-Ansible role to configure spctl
-
-## Table of content
-
-* [Defaults](#defaults)
-  * [spctl_disable_master](#spctl_disable_master)
-  * [spctl_gatekeeper_policy](#spctl_gatekeeper_policy)
-* [Dependencies](#dependencies)
-
-
-## Defaults
+## Default Variables
 
 ### spctl_disable_master
 
 Disable/Enable master system policy
 
-#### Value
+#### Default value
 
-```yaml
+```YAML
 spctl_disable_master: true
 ```
 
@@ -25,12 +15,19 @@ spctl_disable_master: true
 
 Update gatekeeper policy
 
-#### Value
+#### Default value
 
-```yaml
+```YAML
 spctl_gatekeeper_policy: false
 ```
-
 ## Dependencies
 
 None
+
+## License
+
+Apache-2.0
+
+## Author
+
+Thomas Boerger
