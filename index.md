@@ -7,7 +7,7 @@ Disable/Enable master system policy
 
 #### Default value
 
-```YAML
+```yaml
 spctl_disable_master: true
 ```
 
@@ -17,7 +17,7 @@ Update gatekeeper policy
 
 #### Default value
 
-```YAML
+```yaml
 spctl_gatekeeper_policy: false
 ```
 ## Dependencies
