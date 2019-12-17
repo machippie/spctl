@@ -19,7 +19,7 @@
     domain: /var/db/SystemPolicy-prefs
     key: enabled
     type: string
-    value: '{% if spctl_gatekeeper_policy | default(False) %}yes{% else %}no{% endif %}'
+    value: "{% if spctl_gatekeeper_policy | default(False) %}yes{% else %}no{% endif %}"
     state: present
   tags:
     - spctl
